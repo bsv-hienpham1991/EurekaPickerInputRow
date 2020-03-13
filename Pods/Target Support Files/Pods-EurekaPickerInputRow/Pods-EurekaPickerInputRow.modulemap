@@ -1,0 +1,6 @@
+framework module Pods_EurekaPickerInputRow {
+  umbrella header "Pods-EurekaPickerInputRow-umbrella.h"
+
+  export *
+  module * { export * }
+}

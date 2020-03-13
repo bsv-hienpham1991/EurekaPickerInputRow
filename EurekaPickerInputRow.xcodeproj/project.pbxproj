@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E91DA14241B6B860070916B /* ProfileFormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91DA11241B6B860070916B /* ProfileFormPickerCell.swift */; };
+		0E91DA15241B6B860070916B /* ProfileFormPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91DA12241B6B860070916B /* ProfileFormPickerView.swift */; };
+		0E91DA16241B6B860070916B /* ProfileFormPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E91DA13241B6B860070916B /* ProfileFormPickerView.xib */; };
 		0EE301B9241B46E0000D7D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE301B8241B46E0000D7D7A /* AppDelegate.swift */; };
 		0EE301BB241B46E0000D7D7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE301BA241B46E0000D7D7A /* SceneDelegate.swift */; };
 		0EE301BD241B46E0000D7D7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE301BC241B46E0000D7D7A /* ViewController.swift */; };
@@ -14,6 +17,10 @@
 		0EE301C2241B46E3000D7D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE301C1241B46E3000D7D7A /* Assets.xcassets */; };
 		0EE301C5241B46E3000D7D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE301C3241B46E3000D7D7A /* LaunchScreen.storyboard */; };
 		0EE301D0241B46E3000D7D7A /* EurekaPickerInputRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE301CF241B46E3000D7D7A /* EurekaPickerInputRowTests.swift */; };
+		0EE301EC241B4859000D7D7A /* PickerInputCellCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE301E1241B4859000D7D7A /* PickerInputCellCustom.swift */; };
+		0EE301F6241B487E000D7D7A /* ViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE301F5241B487D000D7D7A /* ViewProvider.swift */; };
+		BB6BF3DFE416322DCC4E96CA /* Pods_EurekaPickerInputRowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36237DAB89BDAAF00058B04 /* Pods_EurekaPickerInputRowTests.framework */; };
+		F91752FEDACFAAA2CB5120A3 /* Pods_EurekaPickerInputRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E276FB08F2AD5BDF8BBA6665 /* Pods_EurekaPickerInputRow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E91DA11241B6B860070916B /* ProfileFormPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFormPickerCell.swift; sourceTree = "<group>"; };
+		0E91DA12241B6B860070916B /* ProfileFormPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFormPickerView.swift; sourceTree = "<group>"; };
+		0E91DA13241B6B860070916B /* ProfileFormPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileFormPickerView.xib; sourceTree = "<group>"; };
 		0EE301B5241B46E0000D7D7A /* EurekaPickerInputRow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EurekaPickerInputRow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE301B8241B46E0000D7D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE301BA241B46E0000D7D7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +48,14 @@
 		0EE301CB241B46E3000D7D7A /* EurekaPickerInputRowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EurekaPickerInputRowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE301CF241B46E3000D7D7A /* EurekaPickerInputRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaPickerInputRowTests.swift; sourceTree = "<group>"; };
 		0EE301D1241B46E3000D7D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EE301E1241B4859000D7D7A /* PickerInputCellCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerInputCellCustom.swift; sourceTree = "<group>"; };
+		0EE301F5241B487D000D7D7A /* ViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProvider.swift; sourceTree = "<group>"; };
+		4CC88894CB2EBE0B40B923C5 /* Pods-EurekaPickerInputRow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaPickerInputRow.debug.xcconfig"; path = "Target Support Files/Pods-EurekaPickerInputRow/Pods-EurekaPickerInputRow.debug.xcconfig"; sourceTree = "<group>"; };
+		62AE0C265D5426313F3554A9 /* Pods-EurekaPickerInputRow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaPickerInputRow.release.xcconfig"; path = "Target Support Files/Pods-EurekaPickerInputRow/Pods-EurekaPickerInputRow.release.xcconfig"; sourceTree = "<group>"; };
+		79706C91EC9A131B2FE62AE9 /* Pods-EurekaPickerInputRowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaPickerInputRowTests.debug.xcconfig"; path = "Target Support Files/Pods-EurekaPickerInputRowTests/Pods-EurekaPickerInputRowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C36237DAB89BDAAF00058B04 /* Pods_EurekaPickerInputRowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EurekaPickerInputRowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E276FB08F2AD5BDF8BBA6665 /* Pods_EurekaPickerInputRow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EurekaPickerInputRow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0DC88CDDC5A2F4DA8717EA /* Pods-EurekaPickerInputRowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaPickerInputRowTests.release.xcconfig"; path = "Target Support Files/Pods-EurekaPickerInputRowTests/Pods-EurekaPickerInputRowTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91752FEDACFAAA2CB5120A3 /* Pods_EurekaPickerInputRow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +71,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6BF3DFE416322DCC4E96CA /* Pods_EurekaPickerInputRowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E91DA10241B6B860070916B /* ProfileFormPickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				0E91DA11241B6B860070916B /* ProfileFormPickerCell.swift */,
+				0E91DA12241B6B860070916B /* ProfileFormPickerView.swift */,
+				0E91DA13241B6B860070916B /* ProfileFormPickerView.xib */,
+			);
+			path = ProfileFormPickerCell;
+			sourceTree = "<group>";
+		};
 		0EE301AC241B46DF000D7D7A = {
 			isa = PBXGroup;
 			children = (
 				0EE301B7241B46E0000D7D7A /* EurekaPickerInputRow */,
 				0EE301CE241B46E3000D7D7A /* EurekaPickerInputRowTests */,
 				0EE301B6241B46E0000D7D7A /* Products */,
+				3A1A924051FA9782370B3437 /* Pods */,
+				911DEF44945B28891C086B9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				0EE301B8241B46E0000D7D7A /* AppDelegate.swift */,
+				0EE301DF241B4859000D7D7A /* Core */,
+				0E91DA10241B6B860070916B /* ProfileFormPickerCell */,
 				0EE301BA241B46E0000D7D7A /* SceneDelegate.swift */,
 				0EE301BC241B46E0000D7D7A /* ViewController.swift */,
 				0EE301BE241B46E0000D7D7A /* Main.storyboard */,
@@ -99,6 +133,43 @@
 			path = EurekaPickerInputRowTests;
 			sourceTree = "<group>";
 		};
+		0EE301DF241B4859000D7D7A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0EE301F5241B487D000D7D7A /* ViewProvider.swift */,
+				0EE301E0241B4859000D7D7A /* PickerInputCell */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0EE301E0241B4859000D7D7A /* PickerInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				0EE301E1241B4859000D7D7A /* PickerInputCellCustom.swift */,
+			);
+			path = PickerInputCell;
+			sourceTree = "<group>";
+		};
+		3A1A924051FA9782370B3437 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CC88894CB2EBE0B40B923C5 /* Pods-EurekaPickerInputRow.debug.xcconfig */,
+				62AE0C265D5426313F3554A9 /* Pods-EurekaPickerInputRow.release.xcconfig */,
+				79706C91EC9A131B2FE62AE9 /* Pods-EurekaPickerInputRowTests.debug.xcconfig */,
+				EB0DC88CDDC5A2F4DA8717EA /* Pods-EurekaPickerInputRowTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		911DEF44945B28891C086B9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E276FB08F2AD5BDF8BBA6665 /* Pods_EurekaPickerInputRow.framework */,
+				C36237DAB89BDAAF00058B04 /* Pods_EurekaPickerInputRowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EE301D4241B46E3000D7D7A /* Build configuration list for PBXNativeTarget "EurekaPickerInputRow" */;
 			buildPhases = (
+				B35FE58579E6A941F0E1B2F0 /* [CP] Check Pods Manifest.lock */,
 				0EE301B1241B46E0000D7D7A /* Sources */,
 				0EE301B2241B46E0000D7D7A /* Frameworks */,
 				0EE301B3241B46E0000D7D7A /* Resources */,
+				ABD768A592AB860265523925 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EE301D7241B46E3000D7D7A /* Build configuration list for PBXNativeTarget "EurekaPickerInputRowTests" */;
 			buildPhases = (
+				84AEAF8556A257D70705C368 /* [CP] Check Pods Manifest.lock */,
 				0EE301C7241B46E3000D7D7A /* Sources */,
 				0EE301C8241B46E3000D7D7A /* Frameworks */,
 				0EE301C9241B46E3000D7D7A /* Resources */,
@@ -180,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E91DA16241B6B860070916B /* ProfileFormPickerView.xib in Resources */,
 				0EE301C5241B46E3000D7D7A /* LaunchScreen.storyboard in Resources */,
 				0EE301C2241B46E3000D7D7A /* Assets.xcassets in Resources */,
 				0EE301C0241B46E0000D7D7A /* Main.storyboard in Resources */,
@@ -195,14 +270,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84AEAF8556A257D70705C368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EurekaPickerInputRowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD768A592AB860265523925 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EurekaPickerInputRow/Pods-EurekaPickerInputRow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EurekaPickerInputRow/Pods-EurekaPickerInputRow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EurekaPickerInputRow/Pods-EurekaPickerInputRow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B35FE58579E6A941F0E1B2F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EurekaPickerInputRow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0EE301B1241B46E0000D7D7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E91DA15241B6B860070916B /* ProfileFormPickerView.swift in Sources */,
 				0EE301BD241B46E0000D7D7A /* ViewController.swift in Sources */,
+				0E91DA14241B6B860070916B /* ProfileFormPickerCell.swift in Sources */,
 				0EE301B9241B46E0000D7D7A /* AppDelegate.swift in Sources */,
+				0EE301F6241B487E000D7D7A /* ViewProvider.swift in Sources */,
 				0EE301BB241B46E0000D7D7A /* SceneDelegate.swift in Sources */,
+				0EE301EC241B4859000D7D7A /* PickerInputCellCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,16 +503,21 @@
 		};
 		0EE301D5241B46E3000D7D7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC88894CB2EBE0B40B923C5 /* Pods-EurekaPickerInputRow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9X2899GXE9;
 				INFOPLIST_FILE = EurekaPickerInputRow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hienpham.EurekaPickerInputRow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Development All";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,16 +525,21 @@
 		};
 		0EE301D6241B46E3000D7D7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AE0C265D5426313F3554A9 /* Pods-EurekaPickerInputRow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9X2899GXE9;
 				INFOPLIST_FILE = EurekaPickerInputRow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hienpham.EurekaPickerInputRow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Development All";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,6 +547,7 @@
 		};
 		0EE301D8241B46E3000D7D7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79706C91EC9A131B2FE62AE9 /* Pods-EurekaPickerInputRowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +569,7 @@
 		};
 		0EE301D9241B46E3000D7D7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0DC88CDDC5A2F4DA8717EA /* Pods-EurekaPickerInputRowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

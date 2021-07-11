@@ -25,8 +25,6 @@ class ViewController: FormViewController {
                              Scientist(id: 3, firstName: "Galileo", lastName: "Galilei"),
                              Scientist(id: 4, firstName: "Marie", lastName: "Curie"),
                              Scientist(id: 5, firstName: "Louis", lastName: "Pasteur"),
-                             Scientist(id: 6, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 5, firstName: "Louis", lastName: "Pasteur"),
                              Scientist(id: 6, firstName: "Michael", lastName: "Faraday")]
 
         form +++ Section()

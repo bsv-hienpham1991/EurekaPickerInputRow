@@ -13,7 +13,6 @@ class ProfileFormPickerView: PickerInputCellContentView {
     @IBOutlet weak var bottomSpaceConstraint: NSLayoutConstraint!
     @IBOutlet weak var requiredView: UIImageView!
     @IBOutlet weak var placeHolderLabel: UILabel!
-    @IBOutlet weak var placeHolderLabelDisable: UILabel!
     @IBOutlet weak var detailContainer: UIView!
     @IBOutlet weak var arrowIcon: UIButton!
     @IBOutlet weak var errorContainer: UIView!

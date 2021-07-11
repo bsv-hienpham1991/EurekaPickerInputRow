@@ -63,12 +63,6 @@
                                                     <color key="textColor" name="146-151-201"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="入力不可" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwK-Bd-cMS">
-                                                    <rect key="frame" x="16" y="16.5" width="302" height="13"/>
-                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
-                                                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-mu-o4O">
                                                     <rect key="frame" x="304" y="0.0" width="46" height="46"/>
                                                     <constraints>
@@ -79,14 +73,11 @@
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="PwK-Bd-cMS" secondAttribute="trailing" constant="32" id="6fV-KT-7MY"/>
-                                                <constraint firstItem="PwK-Bd-cMS" firstAttribute="centerY" secondItem="rkp-Ci-nSL" secondAttribute="centerY" id="6fd-7x-rZq"/>
                                                 <constraint firstAttribute="trailing" secondItem="8dv-mu-o4O" secondAttribute="trailing" id="DbD-XC-8e9"/>
                                                 <constraint firstAttribute="trailing" secondItem="rzh-l6-a9n" secondAttribute="trailing" constant="32" id="EFM-3r-vmf"/>
                                                 <constraint firstItem="8dv-mu-o4O" firstAttribute="top" secondItem="rkp-Ci-nSL" secondAttribute="top" id="EQR-kz-sq2"/>
                                                 <constraint firstAttribute="bottom" secondItem="8dv-mu-o4O" secondAttribute="bottom" id="GUY-R8-xMb"/>
                                                 <constraint firstItem="rzh-l6-a9n" firstAttribute="centerY" secondItem="rkp-Ci-nSL" secondAttribute="centerY" id="ed4-4h-geM"/>
-                                                <constraint firstItem="PwK-Bd-cMS" firstAttribute="leading" secondItem="rkp-Ci-nSL" secondAttribute="leading" constant="16" id="ld8-o5-PF2"/>
                                                 <constraint firstItem="Icf-Xq-FqP" firstAttribute="leading" secondItem="rkp-Ci-nSL" secondAttribute="leading" constant="16" id="sSM-oe-03p"/>
                                                 <constraint firstItem="Icf-Xq-FqP" firstAttribute="centerY" secondItem="rkp-Ci-nSL" secondAttribute="centerY" id="yh0-Xm-G46"/>
                                                 <constraint firstAttribute="trailing" secondItem="Icf-Xq-FqP" secondAttribute="trailing" constant="32" id="z2h-jU-n12"/>
@@ -172,7 +163,6 @@
                 <outlet property="errorContainer" destination="0M1-lH-RCL" id="uUa-qe-3D2"/>
                 <outlet property="pickerButton" destination="iAv-5b-n40" id="hjK-mM-2jj"/>
                 <outlet property="placeHolderLabel" destination="rzh-l6-a9n" id="4mJ-rn-iGS"/>
-                <outlet property="placeHolderLabelDisable" destination="PwK-Bd-cMS" id="SHd-84-D2n"/>
                 <outlet property="requiredView" destination="CiN-oV-mjF" id="UQn-Zd-fTa"/>
                 <outlet property="titleLabel" destination="DPt-Kb-Z2W" id="eEo-Rp-VX7"/>
                 <outlet property="topSpaceConstraint" destination="piU-pS-Y8b" id="uws-Bq-bsL"/>

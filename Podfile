@@ -7,7 +7,6 @@ target 'EurekaPickerInputRow' do
 
   # Pods for EurekaPickerInputRow
   pod 'Eureka'
-  pod 'SnapKit', '~> 5.0.0'
 
   target 'EurekaPickerInputRowTests' do
     inherit! :search_paths

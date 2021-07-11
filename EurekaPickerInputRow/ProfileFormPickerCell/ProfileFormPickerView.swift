@@ -17,6 +17,7 @@ class ProfileFormPickerView: PickerInputCellContentView {
     @IBOutlet weak var detailContainer: UIView!
     @IBOutlet weak var arrowIcon: UIButton!
     @IBOutlet weak var errorContainer: UIView!
+    @IBOutlet weak var pickerButton: UIButton!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -24,9 +25,4 @@ class ProfileFormPickerView: PickerInputCellContentView {
         // Drawing code
     }
     */
-    
-
-    @IBAction func labelClicked(_ sender: Any) {
-        firstResponderDelegate?.pickerInputCellContentViewBecomeFirstRersponder(self)
-    }
 }

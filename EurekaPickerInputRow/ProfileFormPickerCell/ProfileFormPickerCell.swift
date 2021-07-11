@@ -23,8 +23,8 @@ open class ProfileFormPickerCell<T>: PickerInputCellCustom<T> where T: Equatable
         // It seems to be bug cause by os. Because the stack trace show trigger command from os source.
         // So to fix this a place holder label is created for display when there is no value instead.
         if row.isDisabled {
-            bsContentView?.detailLabel?.isHidden = true
-            if let unwrapped = bsContentView as? ProfileFormPickerView {
+            customContentView?.detailLabel?.isHidden = true
+            if let unwrapped = customContentView as? ProfileFormPickerView {
                 unwrapped.placeHolderLabelDisable.isHidden = false
                 unwrapped.placeHolderLabelDisable.text = (row as? NoValueDisplayTextConformance)?.noValueDisplayText
                 unwrapped.placeHolderLabel.isHidden = true
@@ -32,8 +32,8 @@ open class ProfileFormPickerCell<T>: PickerInputCellCustom<T> where T: Equatable
                 unwrapped.arrowIcon.isEnabled = false
             }
         } else {
-            bsContentView?.detailLabel?.isHidden = (row.value == nil)
-            if let unwrapped = bsContentView as? ProfileFormPickerView {
+            customContentView?.detailLabel?.isHidden = (row.value == nil)
+            if let unwrapped = customContentView as? ProfileFormPickerView {
                 unwrapped.placeHolderLabelDisable.isHidden = true
                 unwrapped.placeHolderLabel.text = (row as? NoValueDisplayTextConformance)?.noValueDisplayText
                 unwrapped.placeHolderLabel.isHidden = (row.value != nil)
@@ -42,9 +42,17 @@ open class ProfileFormPickerCell<T>: PickerInputCellCustom<T> where T: Equatable
             }
         }
         
-        if let unwrapped = bsContentView as? ProfileFormPickerView {
+        if let unwrapped = customContentView as? ProfileFormPickerView {
             unwrapped.errorContainer.isHidden = row.isValid || row.isDisabled
         }
+        
+        if let unwrapped = customContentView as? ProfileFormPickerView {
+            unwrapped.pickerButton.addTarget(self, action: #selector(didTapOnPickerButton), for: .touchUpInside)
+        }
+    }
+    
+    @objc private func didTapOnPickerButton() {
+        cellBecomeFirstResponder()
     }
     
 //    open override func resignFirstResponder() -> Bool {

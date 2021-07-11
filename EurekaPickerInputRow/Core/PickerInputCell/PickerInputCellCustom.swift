@@ -9,37 +9,32 @@
 import Foundation
 import UIKit
 import Eureka
-import SnapKit
 
-protocol PickerInputCellContentViewDelegate: class {
-    func pickerInputCellContentViewBecomeFirstRersponder(_ pickerInputCellContentView: PickerInputCellContentView)
-}
-
-public protocol PickerInputHasCustomContentView: class {
+public protocol PickerInputHasCustomContentView: AnyObject {
     var contentViewProvider: ViewProvider<PickerInputCellContentView>? { get set }
 }
 
 open class PickerInputCellContentView: UIView {
     @IBOutlet weak open var titleLabel: UILabel?
     @IBOutlet weak open var detailLabel: UILabel?
-    weak var firstResponderDelegate: PickerInputCellContentViewDelegate?
 }
 
 open class PickerInputCellCustom<T>: PickerInputCell<T> where T: Equatable {
-    var bsContentView: PickerInputCellContentView?
+    var customContentView: PickerInputCellContentView?
     
     fileprivate var pickerInputRowCustom: RowWithOptions? { return row as? RowWithOptions }
         
     open override func setup() {
         super.setup()
-        bsContentView = (row as? PickerInputHasCustomContentView)?.contentViewProvider?.makeView()
-        if let unwrapped = bsContentView {
-            addSubview(unwrapped)
-            unwrapped.snp.makeConstraints { (make) in
-                make.edges.equalToSuperview()
-            }
+        customContentView = (row as? PickerInputHasCustomContentView)?.contentViewProvider?.makeView()
+        if let unwrapped = customContentView {
+            contentView.addSubview(unwrapped)
+            unwrapped.translatesAutoresizingMaskIntoConstraints = false
+            unwrapped.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+            unwrapped.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+            unwrapped.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+            unwrapped.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         }
-        bsContentView?.firstResponderDelegate = self
     }
     
     open override func update() {
@@ -49,12 +44,12 @@ open class PickerInputCellCustom<T>: PickerInputCell<T> where T: Equatable {
         detailTextLabel?.isHidden = true
         selectionStyle = .none
         
-        bsContentView?.titleLabel?.text = row.title
+        customContentView?.titleLabel?.text = row.title
         
         if let value = row.value {
-            bsContentView?.detailLabel?.text = row.displayValueFor?(value) ?? (row as? NoValueDisplayTextConformance)?.noValueDisplayText
+            customContentView?.detailLabel?.text = row.displayValueFor?(value) ?? (row as? NoValueDisplayTextConformance)?.noValueDisplayText
         } else {
-            bsContentView?.detailLabel?.text = (row as? NoValueDisplayTextConformance)?.noValueDisplayText
+            customContentView?.detailLabel?.text = (row as? NoValueDisplayTextConformance)?.noValueDisplayText
         }
 
         if let selectedValue = row.value, let options = pickerInputRowCustom?.rowOptions as? [T], let index = options.firstIndex(of: selectedValue) {
@@ -77,12 +72,6 @@ open class PickerInputCellCustom<T>: PickerInputCell<T> where T: Equatable {
             self.row.value = picker.rowOptions[rowNumber] as? T
             update()
         }
-    }
-}
-
-extension PickerInputCellCustom: PickerInputCellContentViewDelegate {
-    func pickerInputCellContentViewBecomeFirstRersponder(_ pickerInputCellContentView: PickerInputCellContentView) {
-        cellBecomeFirstResponder()
     }
 }
 

@@ -27,16 +27,7 @@ class ViewController: FormViewController {
                              Scientist(id: 5, firstName: "Louis", lastName: "Pasteur"),
                              Scientist(id: 6, firstName: "Michael", lastName: "Faraday"),
                              Scientist(id: 5, firstName: "Louis", lastName: "Pasteur"),
-                             Scientist(id: 6, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 7, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 8, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 9, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 10, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 11, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 12, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 13, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 14, firstName: "Michael", lastName: "Faraday"),
-                             Scientist(id: 15, firstName: "Michael", lastName: "Faraday")]
+                             Scientist(id: 6, firstName: "Michael", lastName: "Faraday")]
 
         form +++ Section()
             <<< ProfileFormPickerRow<Scientist>() {row in
@@ -57,7 +48,7 @@ class ViewController: FormViewController {
                     return (row.options.count <= 0)
                 })
             }.cellSetup({ (cell, row) in
-                if let unwrapped: ProfileFormPickerView = cell.bsContentView as? ProfileFormPickerView {
+                if let unwrapped: ProfileFormPickerView = cell.customContentView as? ProfileFormPickerView {
                     unwrapped.topSpaceConstraint.constant = 32
                 }
                 cell.height = { UITableView.automaticDimension }
